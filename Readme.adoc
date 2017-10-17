@@ -1,0 +1,30 @@
+= Metadata Catalog User Interface
+
+Metadata Catalog is a web application user interface which displays Teiid/JDV Metadata Information
+
+**Key Features:**
+
+* Metadata Browser
+* Data Lineage 
+
+== Build
+
+* install JDK 1.8 or higher
+* install maven 3.3+ - http://maven.apache.org/download.html
+* install node,npm 6.11+,3.10+ - https://nodejs.org/en/download
+* install bower 1.8+ - https://bower.io
+* Create a github account fork the metadata-catalog-ui project
+
+Enter the following:
+
+[source,xml]
+----
+$ git clone https://github.com/<yourname>/metadata-catalog-ui.git
+$ cd tmetadata-catalog-ui
+$ mvn clean package -s settings.xml
+----
+       
+==  Deploy
+
+The 'metadata-catalog-ui.war' war file has to deploy on a Teiid/JDV Server.
+Once deployed, you access to the user interface through http://localhost:8080/metadata-catalog-ui.

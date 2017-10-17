@@ -1,0 +1,64 @@
+<div class="container-fluid container-cards-pf">
+                <div class="col-md-12 list-view-container example-list-view">
+                        <pf-list-view id="exampleListView"
+                                      config="vm.config"
+                                      items="vm.items"
+                                      action-buttons="vm.actionButtons"
+                                      enable-button-for-item-fn="vm.enableButtonForItemFn"
+                                      menu-actions="vm.menuActions"
+                                      update-menu-action-for-item-fn="vm.updateMenuActionForItemFn"
+                                      menu-class-for-item-fn="vm.getMenuClass"
+                                      hide-menu-for-item-fn="vm.hideMenuActions"
+                                      custom-scope="vm.customScope">
+                                <div class="list-view-pf-left">
+                                        <span class="{{item.typeIcon}} list-view-pf-icon-sm"></span>
+                                </div>
+                                <div class="list-view-pf-body">
+                                        <div class="list-view-pf-description">
+                                                <div class="list-group-item-heading">
+                                                        {{item.name}}
+                                                </div>
+                                                <div class="list-group-item-text">
+                                                        The following snippet of text is <a href="#">rendered as link text</a>.
+                                                </div>
+                                        </div>
+                                        <div class="list-view-pf-additional-info">
+                                                <div class="list-view-pf-additional-info-item">
+                                                        <div class="list-view-pf-expand" ng-click="$ctrl.customScope.toggleExpandItemField(item, 'hosts')">
+                                                                <span class="fa fa-angle-right" ng-class="{'fa-angle-down': $ctrl.customScope.isItemExpanded(item, 'hosts')}"></span>
+                                                                <span class="pficon pficon-screen"></span>
+                                                                <strong>{{item.hostCount}}</strong> Hosts
+                                                        </div>
+                                                </div>
+                                                <div class="list-view-pf-additional-info-item">
+                                                        <div class="list-view-pf-expand" ng-click="$ctrl.customScope.toggleExpandItemField(item, 'clusters')">
+                                                                <span class="fa fa-angle-right" ng-class="{'fa-angle-down': $ctrl.customScope.isItemExpanded(item, 'clusters')}"></span>
+                                                                <span class="pficon pficon-cluster"></span>
+                                                                <strong>{{item.clusterCount}}</strong> Clusters
+                                                        </div>
+                                                </div>
+                                                <div class="list-view-pf-additional-info-item">
+                                                        <div class="list-view-pf-expand" ng-click="$ctrl.customScope.toggleExpandItemField(item, 'nodes')">
+                                                                <span class="fa fa-angle-right" ng-class="{'fa-angle-down': $ctrl.customScope.isItemExpanded(item, 'nodes')}"></span>
+                                                                <span class="pficon pficon-container-node"></span>
+                                                                <strong>{{item.nodeCount}}</strong> Nodes
+                                                        </div>
+                                                </div>
+                                                <div class="list-view-pf-additional-info-item">
+                                                        <div class="list-view-pf-expand" ng-click="$ctrl.customScope.toggleExpandItemField(item, 'images')">
+                                                                <span class="fa fa-angle-right" ng-class="{'fa-angle-down': $ctrl.customScope.isItemExpanded(item, 'images')}"></span>
+                                                                <span class="pficon pficon-image"></span>
+                                                                <strong>{{item.imageCount}}</strong> Images
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <list-expanded-content>
+                                        <div class="close">
+                                                <span class="pficon pficon-close" ng-click="$parent.$ctrl.customScope.collapseItem($parent.item)"></span>
+                                        </div>
+                                        <item-expansion item="$parent.item"></item-expansion>
+                                </list-expanded-content>
+                        </pf-list-view>
+                </div>
+</div>

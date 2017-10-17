@@ -1,0 +1,14 @@
+.settings
+target
+.project
+.classpath
+.checkstyle
+bin
+build.xml
+.DS_Store
+m2e-wtp
+*.iml
+.idea
+*.tlog
+ObjectStore
+src/main/resources/static/bower_components/*

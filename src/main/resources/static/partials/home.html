@@ -1,0 +1,119 @@
+<div class="container-fluid container-cards-pf">
+
+    <div class="row row-cards-pf">
+        <div class="col-md-12">
+            <div class="card-pf card-pf-utilization">
+                <div class="card-pf-heading">
+                    <h2 class="card-pf-title">Summary</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cards-pf" >
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+                <div class="card-pf-body">
+                    <div class="card-pf-top-element">
+                        <span class="fa fa-database card-pf-icon-circle"></span>
+                    </div>
+                    <h2 class="card-pf-title text-center">
+                        {{vm.vdb_count}} VDBs
+                    </h2>
+                    <div class="card-pf-items text-center">
+                        <div class="card-pf-item">
+                            <span class="fa fa-check"></span>
+                            <span class="card-pf-item-text">{{vm.vdb_valid_count}}</span>
+                        </div>
+                        <div class="card-pf-item">
+                            <span class="fa pficon-error-circle-o"></span>
+                            <span class="card-pf-item-text">{{vm.vdb_count - vm.vdb_valid_count}}</span>
+                        </div>
+                    </div>
+                    <p class="card-pf-info text-center"><strong>Updated On</strong> {{vm.vdb_updatedate}}</p>
+                </div>
+                <div class="card-pf-view-checkbox">
+                    <input type="checkbox"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+                <div class="card-pf-body">
+                    <div class="card-pf-top-element">
+                        <span class="pficon pficon-blueprint card-pf-icon-circle"></span>
+                    </div>
+                    <h2 class="card-pf-title text-center">
+                        {{vm.physicalModel_count + vm.virtualModel_count}} Models
+                    </h2>
+                    <div class="card-pf-items text-center">
+                        <div class="card-pf-item">
+                            <span class="pficon pficon-build"></span>
+                            <span class="card-pf-item-text">{{vm.virtualModel_count}}</span>
+                        </div>
+                        <div class="card-pf-item">
+                            <span class="pficon pficon-builder-image"></span>
+                            <span class="card-pf-item-text">{{vm.physicalModel_count}}</span>
+                        </div>
+                    </div>
+                    <p class="card-pf-info text-center"><strong>Updated On</strong> {{vm.vdb_updatedate}}</p>
+                </div>
+                <div class="card-pf-view-checkbox">
+                    <input type="checkbox"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+                <div class="card-pf-body">
+                    <div class="card-pf-top-element">
+                        <span class="fa fa-table card-pf-icon-circle"></span>
+                    </div>
+                    <h2 class="card-pf-title text-center">
+                        {{vm.physicalTable_count + vm.virtualTable_count}} Tables/Views
+                    </h2>
+                    <div class="card-pf-items text-center">
+                        <div class="card-pf-item">
+                            <span class="pficon pficon-build"></span>
+                            <span class="card-pf-item-text">{{vm.virtualTable_count}}</span>
+                        </div>
+                        <div class="card-pf-item">
+                            <span class="pficon pficon-builder-image"></span>
+                            <span class="card-pf-item-text">{{vm.physicalTable_count}}</span>
+                        </div>
+                    </div>
+                    <p class="card-pf-info text-center"><strong>Updated On</strong> {{vm.vdb_updatedate}}</p>
+                </div>
+                <div class="card-pf-view-checkbox">
+                    <input type="checkbox"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+                <div class="card-pf-body">
+                    <div class="card-pf-top-element">
+                        <span class="pficon pficon-network card-pf-icon-circle"></span>
+                    </div>
+                    <h2 class="card-pf-title text-center">
+                        {{vm.datasource_count}} Datasources
+                    </h2>
+                    <div class="card-pf-items text-center">
+                        <div class="card-pf-item">
+                            <span class="fa fa-check"></span>
+                            <span class="card-pf-item-text">{{vm.datasource_valid_count}}</span>
+                        </div>
+                        <div class="card-pf-item">
+                            <span class="fa pficon-error-circle-o"></span>
+                            <span class="card-pf-item-text">{{vm.datasource_count - vm.datasource_valid_count}}</span>
+                        </div>
+                    </div>
+                    <p class="card-pf-info text-center"><strong>Updated On</strong> {{vm.ds_updatedate}}</p>
+                </div>
+                <div class="card-pf-view-checkbox">
+                    <input type="checkbox"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.node text {
+  font: 12px monospace;
+}
+
+.link{
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+#usesin{
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+  vector-effect: non-scaling-stroke;
+}
+
+.icon {
+  display: block;
+  font-size: 46px;
+  height: 106px;
+  line-height: 102px;
+  margin: 0 auto;
+  text-align: center;
+  width: 106px;
+}
+
+lineage-graph{
+
+ height: 640px;
+ overflow-y: scroll;
+ display: block;
+}

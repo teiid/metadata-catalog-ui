@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Metadata Catalog</title>
+  <meta name="description" content="Metadata Catalog for JBoss Data Virtualization (Teiid)">
+  <link rel="shortcut icon" href="bower_components/patternfly/dist/img/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly.min.css" />
+  <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly-additions.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JQuery Components -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Underscore -->
+  <script src="bower_components/underscore/underscore-min.js"></script>
+
+  <!-- Angular Components -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+
+  <!-- d3js c3js -->
+  <script src="bower_components/c3/c3.min.js"></script>
+  <script src="bower_components/d3/d3.min.js"></script>
+
+  <!-- Bootstrap Components -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+  <!-- Datatables Components -->
+  <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
+
+  <!-- PatternFly Components -->
+  <script src="bower_components/patternfly/dist/js/patternfly.js"></script>
+  <script src="bower_components/angular-patternfly/dist/angular-patternfly.js"></script>
+
+  <!-- Main JS -->
+  <script src="app.js"></script>
+
+  <!-- Controllers -->
+  <script src="controllers/header-controller.js"></script>
+  <script src="controllers/home-controller.js"></script>
+  <script src="controllers/data-lineage-controller.js"></script>
+  <script src="controllers/metadata-controller.js"></script>
+
+  <!-- Connections -->
+  <script src="connections/eap-admin-connection.js"></script>
+
+  <!-- Directives -->
+  <script src="directives/header-directive.js"></script>
+
+</head>
+<body class="cards-pf">
+  <div header></div>
+  <pf-notification-list></pf-notification-list>
+  <div ng-view></div>
+</body>
+</html>
