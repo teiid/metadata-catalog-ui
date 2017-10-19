@@ -21,6 +21,7 @@ Enter the following:
 ----
 $ git clone https://github.com/<yourname>/metadata-catalog-ui.git
 $ cd metadata-catalog-ui
+$ bower install
 $ mvn clean package -s settings.xml
 ----
        
@@ -28,3 +29,5 @@ $ mvn clean package -s settings.xml
 
 The 'metadata-catalog-ui.war' war file has to deploy on a Teiid/JDV Server.
 Once deployed, you access to the user interface through http://localhost:8080/metadata-catalog-ui.
+
+WARNING: The 'ModeShape.vdb' vdb needs to be undeployed.
