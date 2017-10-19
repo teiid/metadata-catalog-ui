@@ -20,7 +20,7 @@ Enter the following:
 [source,xml]
 ----
 $ git clone https://github.com/<yourname>/metadata-catalog-ui.git
-$ cd tmetadata-catalog-ui
+$ cd metadata-catalog-ui
 $ mvn clean package -s settings.xml
 ----
        
